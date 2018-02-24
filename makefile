@@ -3,8 +3,8 @@
 #Asignacion de variables.
 COMPILADOR = gcc
 BANDERAS = -Wall -O2
-FUENTES = main.c logica.c logica.h
-OBJETO =  main.o logica.o
+FUENTES = main.c logica.c logica.h menu.c
+OBJETO =  main.o logica.o menu.o
 
 all: $(OBJETO)
 	$(COMPILADOR) $(BANDERAS) -o ejecutable $(OBJETO)
@@ -12,5 +12,6 @@ all: $(OBJETO)
 clean: 
 	$(RM) $(OBJETO)
 
-main.o: main.c logica.h
+main.o: main.c logica.h  
 logica.o: logica.c
+menu.o: menu.c
