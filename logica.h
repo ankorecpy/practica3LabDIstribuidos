@@ -6,3 +6,4 @@ struct producto {
 
 void insertar(char * codigo, char * nombre, int cantidad, int posicion, struct producto * listaProductos);
 void actualizar(char * nuevoCodigo, char * nuevoNombre, int nuevaCantidad, int posicion, struct producto * listaProductos); 
+int obtenerIndiceProducto(char * codigo, int longitudLista, struct producto * listaProductos);
